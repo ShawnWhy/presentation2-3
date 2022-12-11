@@ -15,6 +15,8 @@ const textureLoader = new THREE.TextureLoader()
 
 var audio = new Audio('/musicbox.wav');
 var audiobounce = new Audio('/bounce.wav');
+var ahahah = new Audio('/magicword.mp3');
+
 
 const playHitSound = (collision) =>
 {
@@ -707,6 +709,8 @@ for (var i = 0; i < moreButton.length; i++) {
 
         document.querySelector(".menue").classList.add("hidden")
         document.querySelector(".slideshow").classList.add("hidden")
+        ahahah.loop = true;
+        ahahah.play()
 
         document.querySelector(".annoyingButton").addEventListener("click", ()=>{
 
@@ -717,6 +721,8 @@ for (var i = 0; i < moreButton.length; i++) {
                     document.querySelector(".slideshow").classList.remove("hidden")
                     document.querySelector("body").removeChild(document.querySelector(".annoyingDiv"))
                     clearInterval(annoyingInterval);
+                    ahahah.loop=false
+                    ahahah.stop()
             
             } 
             
