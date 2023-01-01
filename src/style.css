@@ -176,3 +176,34 @@ border:1px black solid;
 
     
 }
+
+.page h2{
+
+    color:black;
+    width:100%;
+    text-align:center;
+    display:inherit;
+}
+
+.page p{
+
+    color:black;
+    width:100%;
+    text-align:center;
+    display:inherit;
+}
+
+.page img{
+
+    
+    width:80%;
+    margin:10%;
+    margin-top:20px;
+    
+    display:inherit;
+   
+}
+
+.mainSlide{
+    overflow-y: scroll;
+}

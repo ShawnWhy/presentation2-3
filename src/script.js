@@ -722,7 +722,7 @@ for (var i = 0; i < moreButton.length; i++) {
                     document.querySelector("body").removeChild(document.querySelector(".annoyingDiv"))
                     clearInterval(annoyingInterval);
                     ahahah.loop=false
-                    ahahah.stop()
+                    ahahah.pause()
             
             } 
             
